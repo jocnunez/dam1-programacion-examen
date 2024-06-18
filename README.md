@@ -23,7 +23,7 @@ Haz una segunda versión de la aplicación donde vayas guardando los primos ya c
 ### Ejercicio 2
 (3 ptos)
 
-Escriba un programa en Java que lea un fichero CSV,  filtre la información, y escriba los resultados en un nuevo fichero CSV.
+Escribe un programa en Java que lea un fichero CSV,  filtre la información, y escriba los resultados en un nuevo fichero CSV.
 
 Requisitos:
  - Crea una clase Persona con atributos nombre, edad, sexo, y profesion.
@@ -58,7 +58,7 @@ Añade a la aplicación:
 Escribe un programa en Java que realice operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en una base de datos SQL que elijas. El programa debe gestionar una lista de productos con un identificador (del tipo que elijas), nombre y precio.
 
 Requisitos:
- - Crea una clase Producto con atributos id (UUID), nombre, y precio.
+ - Crea una clase Producto con atributos id, nombre, y precio.
  - Configure una base de datos sql y crea una tabla: productos con las columnas id, nombre, y precio.
  - Implementa las operaciones CRUD:
     - Crear: Añadir un nuevo producto.
@@ -66,7 +66,6 @@ Requisitos:
     - Actualizar: Modificar los detalles de un producto existente.
     - Eliminar: Borrar un producto de la base de datos.
  - Usa conceptos de OOP para estructurar el programa e indica cuales son (con comentarios).
-Ejemplo de Uso:
 
 
 

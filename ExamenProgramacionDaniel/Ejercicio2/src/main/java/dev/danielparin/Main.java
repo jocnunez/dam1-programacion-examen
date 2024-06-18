@@ -27,8 +27,10 @@ public class Main {
         System.out.print("ingrese la profesion o profesiones: ");
         String filtProfesion[] = scanner.nextLine().split(","); // Con esto nos permitimos el que pueda ingresar las profesiones que quiera.
 
+        // JNúñez: Demasiado nivel de anidamiento, se puede plantear de una formna más limpia
         for (Persona persona : personas) {
 
+            //JNúñez: aquí incumples un requisito, si no inserta edad no debería afectar el filtro
             if (filtEdad.length > 0) { // Como se actua distinto dependiendo si solo hay una edad o es un rango hacemos un if.
 
                 //Realizamos las consultas para un rango de edad.
@@ -61,7 +63,7 @@ public class Main {
         System.out.print("Que nombre quieres poner al nuevo fichero? (Añada la extension .csv)");
         String nombreFichero = scanner.nextLine();
         if (PATH_FICHERO.equals(nombreFichero)) { // Si el path del fichero de donde hemos sacado los datos es igual, nos avisa.
-            //Nos da la opción de elegir si sobreescrivirlo o no.
+            //Nos da la opción de elegir si sobreescribirlo o no.
             System.out.println("Quieres sobrescribirlo? (Y/N)");
 
             if (scanner.nextLine().toLowerCase().equals("y")) { // pasamos a minuscula para que no haya problemas.
@@ -107,6 +109,7 @@ public class Main {
     }
 
 
+    //JNúñez: no hay consistencia con los tabulados de los diferentes métodos, entre otros
         private static void sobrescribirCsv() {
 
             try (PrintWriter writer = new PrintWriter(PATH_FICHERO)) {

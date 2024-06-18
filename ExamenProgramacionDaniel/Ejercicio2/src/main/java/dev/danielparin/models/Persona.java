@@ -3,6 +3,7 @@ package dev.danielparin.models;
 public class Persona {
     private String nombre;
     private int edad;
+    //JNúñez: cuida la consistencia de los espacios o aplica reglas de estilo antes de hacer push
     private  String sexo;
     private String profesion;
 

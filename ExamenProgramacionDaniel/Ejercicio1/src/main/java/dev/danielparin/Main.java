@@ -11,6 +11,8 @@ public class Main {
     public static void main(String[] args) {
 
         int numberElection;
+        // JNúñez: TreeSet cumple la función, pero igual podría ser más simple usar un ArrayList si optas por buscar todos los primos anteriores al número actual,
+        // ya que además los insertarías en el orden correcto
         Set<Integer> primos = new TreeSet<>(); // No tendrá sentido volver a añadir un número que ya está por eso uso un TreeSet, aparte para ordenarlos.
 
 
@@ -38,6 +40,7 @@ public class Main {
 
             System.out.println(numberElection + " es un numero primo.");
         }
+        // JNúñez: este bloque te lo puedes ahorrar si inicializas el TreeSet con dichos valores, además se entendería mejor
         else if (numberElection<=3 || numberElection==5) { // ¿Es parte de los 4 primeros primos?
 
             System.out.println(numberElection + " es un numero primo.");
@@ -53,6 +56,11 @@ public class Main {
             boolean isPrimo = true;
             int divisor = 3;
 
+            // JNúñez:
+            // Entiendo lo que haces porque lo explicaste antes en la criba,
+            // pero es mucho más fácil de seguir colocando cada comentario con el código correspondiente 
+            // Además sería buena oportunidad para buscar todos los primos posibles, desde el último que hayas guardado hasta el actual,
+            // así solo dividirías por tu listado de primos
             while (isPrimo && divisor<=numberElection/2){ // Con nada que haya un divisor se sale.
 
                 if (numberElection%divisor==0) {
