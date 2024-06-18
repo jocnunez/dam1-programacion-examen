@@ -26,13 +26,13 @@ Haz una segunda versión de la aplicación donde vayas guardando los primos ya c
 Escriba un programa en Java que lea un fichero CSV,  filtre la información, y escriba los resultados en un nuevo fichero CSV.
 
 Requisitos:
- - Cree una clase Persona con atributos nombre, edad, sexo, y profesion.
- - Lea los datos desde un fichero CSV llamado input.csv que contiene una lista de personas en el formato nombre,edad,sexo,profesion.
- - pregunte al usuario por la edad, el sexo y la profesión y filtre los datos según la entrada ("" o intro por parte de el usuario en un campo indicará que no se filtrará dicho campo)
- - Escriba los resultados en un nuevo fichero CSV llamado output.csv.
+ - Crea una clase Persona con atributos nombre, edad, sexo, y profesion.
+ - Lee los datos desde un fichero CSV llamado input.csv que contiene una lista de personas en el formato nombre,edad,sexo,profesion.
+ - pregunta al usuario por la edad, el sexo y la profesión y filtra los datos según la entrada ("" o intro por parte de el usuario en un campo indicará que no se filtrará dicho campo)
+ - Escribe los resultados en un nuevo fichero CSV llamado output.csv.
 
 CSV de entrada (input.csv):
- - La edad será un número entre 0 y 100
+ - La edad será un número entre 1 y 100
  - El sexo ["F", "M", "O"]
  - Profesión solo podrá ser ["Ingeniero", "Doctor", "Abogado", "Profesor", "Estudiante", "Arquitecto", "Enfermero", "Científico", "Contador", "Artista", "Mecánico", "Chef", "Electricista",  "Periodista"]
 
@@ -41,7 +41,6 @@ Ejemplo de Entrada/Salida:
 ``` sh
 Ingrese una edad concreta para filtrar por esa edad: 41
 Ingrese un sexo, escribiendo solo la inicial ((M)asculino/(F)emenino/(O)tro): F
-Ingese una ciudad: Madrid
 Ingrese una profesión: Chef
 ```
 
@@ -56,11 +55,25 @@ Añade a la aplicación:
 ### Ejercicio 3
 (4 ptos)
 
+Escribe un programa en Java que realice operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en una base de datos SQL que elijas. El programa debe gestionar una lista de productos con un identificador (del tipo que elijas), nombre y precio.
+
+Requisitos:
+ - Crea una clase Producto con atributos id (UUID), nombre, y precio.
+ - Configure una base de datos sql y crea una tabla: productos con las columnas id, nombre, y precio.
+ - Implementa las operaciones CRUD:
+    - Crear: Añadir un nuevo producto.
+    - Leer: Mostrar la lista de productos.
+    - Actualizar: Modificar los detalles de un producto existente.
+    - Eliminar: Borrar un producto de la base de datos.
+ - Usa conceptos de OOP para estructurar el programa e indica cuales son (con comentarios).
+Ejemplo de Uso:
 
 
-#### Valor de las
+
+#### Método de evaluación
  - La resolución correcta del ejercicio representará el 70% de la nota.
- - La limpieza en el código representará el 10%
- - Comentarios explicando las decisiones importantes el 20%.
+ - La limpieza en el código representará el 10% de la nota.
+ - Los comentarios explicando las decisiones importantes representará el 20%.
+ - Se puntuará sobre 10 aunque el máximo sea 12.
 
 ¡Buena suerte con tu examen! 
